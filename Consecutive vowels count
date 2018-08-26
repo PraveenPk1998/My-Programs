@@ -1,0 +1,9 @@
+a = input()
+b = ['a','e','i','o','u']
+c = 0
+d = a.lower()
+for i in range(0,len(d)):
+    if d[i] in b:
+        if d[i+1] in b:
+            c += 1
+print(c)
