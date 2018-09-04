@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main()
+{
+int i,j,k,n,a,b,c;
+scanf("%d",&n);
+a=n-1;
+b=n-1;
+c=n-1;
+for(i=0;i<n;i++){
+       k=1;
+    for(j=0;j<n+n-1;j++){
+     if(i+j==a){
+         printf("%d\t",k);
+     }
+     else if(i+j>c)
+     {
+         break;
+     }
+     else if(i+j>a && i+j<=b){
+          k=k+1;
+     printf("%d\t",k);
+     }
+     else if(i+j>b && i+j<=c){
+           k=k-1;
+         printf("%d\t",k);
+     }
+        else{
+            printf("\t");
+        }
+    }
+    printf("\n");
+    b=b+1;
+    c=c+2;
+}
+}
