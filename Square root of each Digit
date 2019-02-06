@@ -1,0 +1,23 @@
+#include <iostream>
+#include<cmath>
+#include<iomanip>
+using namespace std;
+
+int main()
+{
+   int a,b,c,sum=0;
+   double d;
+   cin>>a;
+   while(a!=0){
+       b=a%10;
+       sum=(sum*10)+b;
+       a=a/10;
+   }
+   while(sum!=0){
+       c=sum%10;
+       d=sqrt(c);
+       cout<<fixed<<setprecision(2)<<d<<"\t";
+       sum=sum/10;
+   }
+   return 0;
+}
