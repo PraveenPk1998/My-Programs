@@ -1,0 +1,18 @@
+#include <iostream>
+ 
+using namespace std;
+
+int main(int argc, char** argv)
+{
+   int a,b,c,d,k=3;
+   cin>>a>>b;
+   d=a*2;
+   c=d%10;
+   while(c!=b){
+     d=a*k;
+     k++;
+     c=d%10;
+   }
+   cout<<d;
+
+}
