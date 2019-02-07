@@ -1,0 +1,23 @@
+#include<stdio.h> 
+ 
+int main() 
+{ 
+    int a,b,k=1; 
+    scanf("%d%d",&a,&b); 
+    for(int i=1;i<=a;i++)
+    { 
+        for(int j=0;j<i;j++)
+        { 
+            if(k%b==0)
+            { 
+                printf("*\t"); 
+                
+            }
+            else 
+            { 
+                printf("%d\t",k); 
+                
+            } k=k+1; 
+        }printf("\n"); 
+    } 
+}
